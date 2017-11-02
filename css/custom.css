@@ -1,7 +1,16 @@
+body {
+	background: url('../images/hypnotize.png');
+	background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6, dt {
+	color: #003;
+}
+
 #sidebar {
 	top: 0;
 	bottom: 0;
-	background: #000;
+	background: #003;
 	color: #fff;
 	padding: 30px;
 	position: fixed;
@@ -14,7 +23,7 @@
 
 #name {
 	margin-top: 20px;
-	font-size: 48px;
+	font-size: 28px;
 	letter-spacing: -2px;
 	line-height: 42px;
 	text-align: right;
@@ -31,25 +40,47 @@
 
 #sidebar ul li {
 	padding: 10px 0px;
-	font-size: 15px;
 	color: #aaa;
 	text-align: right;
 }
 
 #sidebar ul li a {
+	display: block;
 	font-size: 16px;
 	color: #aaa;
 	text-decoration: none;
 	letter-spacing: -1px;
-	border-left: 0px solid #000;
-	-webkit-transition: border-left 0.5s, color 0.5s;
-	-moz-transition: border-left 0.5s, color 0.5s;
-	transition: border-left 0.5s, color 0.5s;
+	border-right: 5px solid transparent;
+	-webkit-transition: border-right 0.5s, color 0.5s;
+	-moz-transition: border-right 0.5s, color 0.5s;
+	transition: border-right 0.5s, color 0.5s;
+	padding-right: 10px;
 }
 
-#sidebar ul li a:hover {
+#footer {
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	margin-bottom: 20px;
+}
+
+#footer a {
+	display: inline-block;
+	font-size: 24px;
 	color: #fff;
-	border-left: 5px solid #000;
+	text-align: center;
+	padding: 1px;
+	margin: 0px 10px;
+}
+
+#footer span {
+	display: block;
+	font-size: 13px;
+}
+
+#sidebar ul li a.active, #sidebar ul li a:hover {
+	color: #fff;
+	border-right: 5px solid #fff;
 }
 
 #header {
@@ -69,4 +100,14 @@
 	#sidebar ul li { 
 		text-align: center;
 	}
+}
+
+.progress {
+	margin: 10px 0px;
+	height: 30px;
+	border-radius: 0px;
+}
+
+.progress-bar {
+	background-color: #003;
 }
