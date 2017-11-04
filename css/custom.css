@@ -5,7 +5,7 @@ body {
 }
 
 .animsition-overlay-slide {
-	z-index: 999;
+	z-index: 1003;
 	background: #003;
 }
 
