@@ -1,4 +1,4 @@
-#hyourinseta.github.io
+# hyourinseta.github.io
 
 hyourinseta.github.io adalah GitHub Pages dari akun github https://github.com/hyourinseta. GitHub Pages ini dibuat oleh saya sendiri, Gugi Gustaman (NPM : 1541811) dan merupakan salah satu tugas yang dibuat untuk memenuhi Ujian Tengah Semester (UTS) mata kuliah Pemrograman Web di Program Studi Sistem Informasi STMIK "AMIKBANDUNG".
 
@@ -10,13 +10,13 @@ Berikut adalah tampilan halaman "Home" dari https://hyourinseta.github.io.
 ----------
 
 
-##Daftar Isi
+## Daftar Isi
 
 [TOC]
 
 ----------
 
-##Bootstrap sebagai Framework Front-end
+## Bootstrap sebagai Framework Front-end
 
 
 Framework front-end yang saya gunakan pada GitHub Pages ini adalah **Bootstrap**. Berikut langkah-langkah dalam mengimplementasikan Bootstrap pada halaman web.
