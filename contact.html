@@ -1,22 +1,98 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Hello, world!</title>
+    <title>Resume</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/custom.css" />
   </head>
   <body>
-  	
-    <h1>Hello, world!</h1>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-md-2" id="sidebar">
+          <img class="img-fluid img-thumbnail rounded-circle" src="images/photo.jpg" />
+          <div id="name">
+            <b>GUGI</b>GUSTAMAN
+          </div>
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="profile.html">Profile</a>
+            </li>
+            <li>
+              <a href="contact.html" class="active">Contact</a>
+            </li>
+          </ul>
+          <div id="footer">
+            <a href="https://instagram.com/gugigustaman_"><i class="fa fa-instagram"></i></a>
+            <a href="https://twitter.com/ggustaman_"><i class="fa fa-twitter"></i></a>
+            <a href="https://linkedin.com/in/gugigustaman"><i class="fa fa-linkedin"></i></a>
+            <span>&copy; 2017 | Gugi Gustaman</span>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-10" id="header">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Guest Book</h4>
+              <h6 class="card-subtitle mb-2 text-muted">Let me know who you are</h6>
+              <form id="guest-book-form" novalidate>
+                <div class="form-group">
+                  <label for="name_">Name</label>
+                  <input type="text" class="form-control" id="name_" required />
+                  <div class="invalid-feedback">
+                    Won't you let me know your name? :(
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email address</label>
+                  <input type="email" class="form-control" id="email" required />
+                  <div class="invalid-feedback">
+                    I won't send you any spam :(
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Your Impression</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" minlength="3" required></textarea>
+                  <div class="invalid-feedback">
+                    Please, at least just one word :(
+                  </div>
+                </div>
+                  <button class="btn btn-primary" type="submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <script>
+  (function() {
+    'use strict';
+
+    window.addEventListener('load', function() {
+      var form = document.getElementById('guest-book-form');
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    }, false);
+  })();
+  </script>
   </body>
 </html>
