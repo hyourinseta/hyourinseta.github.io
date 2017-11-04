@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $(".animsition-overlay").animsition({
-    inClass: 'overlay-slide-in-left',
-    outClass: 'overlay-slide-out-left',
+    inClass: 'overlay-slide-in-right',
+    outClass: 'overlay-slide-out-right',
     inDuration: 1500,
     outDuration: 800,
     linkElement: '.animsition-link',
