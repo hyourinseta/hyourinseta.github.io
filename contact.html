@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Resume</title>
+    <title>Contact | Gugi Gustaman's Github Pages</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,10 +9,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animsition.min.css">
     <link rel="stylesheet" href="css/custom.css" />
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container-fluid animsition-overlay" data-animsition-overlay="true">
       <div class="row">
         <div class="col-xs-12 col-md-2" id="sidebar">
           <img class="img-fluid img-thumbnail rounded-circle" src="images/photo.jpg" />
@@ -21,47 +22,44 @@
           </div>
           <ul>
             <li>
-              <a href="index.html">Home</a>
+              <a href="index.html" class="animsition-link">Home</a>
             </li>
             <li>
-              <a href="profile.html">Profile</a>
+              <a href="profile.html" class="animsition-link">Profile</a>
             </li>
             <li>
-              <a href="contact.html" class="active">Contact</a>
+              <a href="contact.html" class="active animsition-link">Contact</a>
             </li>
           </ul>
-          <div id="footer">
-            <a href="https://instagram.com/gugigustaman_"><i class="fa fa-instagram"></i></a>
-            <a href="https://twitter.com/ggustaman_"><i class="fa fa-twitter"></i></a>
-            <a href="https://linkedin.com/in/gugigustaman"><i class="fa fa-linkedin"></i></a>
-            <span>&copy; 2017 | Gugi Gustaman</span>
-          </div>
         </div>
         <div class="col-xs-12 col-md-10" id="header">
           <div class="card">
             <div class="card-body">
-              <h4 class="card-title">Guest Book</h4>
-              <h6 class="card-subtitle mb-2 text-muted">Let me know who you are</h6>
+              <h4 class="card-title">Contact me</h4>
+              <!-- <h6 class="card-subtitle mb-2 text-muted">Let me know who you are and what you need</h6> -->
+              <p class="card-text">
+                You could contact me using the information I provide on my <a href="profile.html">profile page</a>. But here is the form you need to fill if you want to tell me directly using this GitHub page. Make sure you fill all the fields to let me know who you are and what you need ;)
+              </p>
               <form id="guest-book-form" novalidate>
                 <div class="form-group">
                   <label for="name_">Name</label>
                   <input type="text" class="form-control" id="name_" required />
                   <div class="invalid-feedback">
-                    Won't you let me know your name? :(
+                    Won't you let me know your name?
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="email">Email address</label>
                   <input type="email" class="form-control" id="email" required />
                   <div class="invalid-feedback">
-                    I won't send you any spam :(
+                    I won't send you any spam. Please input your email address correctly.
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="exampleFormControlTextarea1">Your Impression</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" minlength="3" required></textarea>
+                  <label for="message">Message</label>
+                  <textarea class="form-control" id="message" rows="3" minlength="3" required></textarea>
                   <div class="invalid-feedback">
-                    Please, at least just one word :(
+                    At least just one word, please.
                   </div>
                 </div>
                   <button class="btn btn-primary" type="submit">Submit</button>
@@ -70,13 +68,21 @@
           </div>
         </div>
       </div>
+      <div class="row">
+        <div id="footer" class="col-md-2">
+          <a href="https://instagram.com/gugigustaman_" target="_blank"><i class="fa fa-instagram"></i></a>
+          <a href="https://twitter.com/ggustaman_" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href="https://linkedin.com/in/gugigustaman" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <span>&copy; 2017 | Gugi Gustaman</span>
+        </div>
+      </div>
     </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/popper.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/animsition.min.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
 
   <script>
   (function() {

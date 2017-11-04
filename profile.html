@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Resume</title>
+    <title>Profile | Gugi Gustaman's Github Pages</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,10 +9,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animsition.min.css">
     <link rel="stylesheet" href="css/custom.css" />
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container-fluid animsition-overlay" data-animsition-overlay="true">
       <div class="row">
         <div class="col-xs-12 col-md-2" id="sidebar">
           <img class="img-fluid img-thumbnail rounded-circle" src="images/photo.jpg" />
@@ -21,21 +22,15 @@
           </div>
           <ul>
             <li>
-              <a href="index.html">Home</a>
+              <a href="index.html" class="animsition-link">Home</a>
             </li>
             <li>
-              <a href="profile.html" class="active">Profile</a>
+              <a href="profile.html" class="active animsition-link">Profile</a>
             </li>
             <li>
-              <a href="contact.html">Contact</a>
+              <a href="contact.html" class="animsition-link">Contact</a>
             </li>
           </ul>
-          <div id="footer">
-            <a href="https://instagram.com/gugigustaman_"><i class="fa fa-instagram"></i></a>
-            <a href="https://twitter.com/ggustaman_"><i class="fa fa-twitter"></i></a>
-            <a href="https://linkedin.com/in/gugigustaman"><i class="fa fa-linkedin"></i></a>
-            <span>&copy; 2017 | Gugi Gustaman</span>
-          </div>
         </div>
         <div class="col-xs-12 col-md-10" id="header">
           <div class="row">
@@ -44,8 +39,6 @@
                 <div class="card-body">
                   <h4 class="card-title">Information</h4>
                   <p class="card-text">
-                    <dt>City</dt>
-                    <dd>Bandung</dd>
                     <dt>Email</dt>
                     <dd>gugi.gustaman.15@gmail.com</dd>
                     <dt>Phone</dt>
@@ -150,7 +143,7 @@
                       <tbody>
                         <tr>
                           <td>
-                            <dt>Programmer</dt>
+                            <dt>Programmer &amp; System Analyst</dt>
                             <dd>PT Skyline Semesta</dd>
                           </td>
                           <td>Jan 2017 - Present</td>
@@ -185,12 +178,20 @@
           </div>
         </div>
       </div>
+      <div class="row">
+        <div id="footer" class="col-md-2">
+          <a href="https://instagram.com/gugigustaman_" target="_blank"><i class="fa fa-instagram"></i></a>
+          <a href="https://twitter.com/ggustaman_" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href="https://linkedin.com/in/gugigustaman" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <span>&copy; 2017 | Gugi Gustaman</span>
+        </div>
+      </div>
     </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+	<script src="js/animsition.min.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
   </body>
 </html>
